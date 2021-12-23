@@ -3,7 +3,7 @@ import AppReducer from './AppReducer.js'
 
 const initialState = {
   transactions: [
-    { id: 1, text: 'Gas', amount: -50 },
+    { id: 1, text: 'Gas', amount: -150 },
     { id: 2, text: 'Salary', amount: 1200 },
     { id: 3, text: 'Doordash Pay', amount: 225 },
     { id: 4, text: 'Rent', amount: -700 },
