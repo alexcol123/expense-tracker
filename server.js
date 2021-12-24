@@ -2,7 +2,7 @@ const express = require('express')
 const dotenv = require('dotenv')
 const colors = require('colors')
 const morgan = require('morgan')
-//const transactions = require('./routes/transactions')
+const transactions = require('./routes/transactions')
 const connectDB = require('./config/db')
 
 const app = express()
@@ -18,7 +18,8 @@ const enviroment = process.env.NODE_ENV
 if (enviroment === 'development') app.use(morgan('dev'))
 
 // Routes
-//app.use('/api/v1/transactions', transactions)
+app.use('/api/v1/transactions', transactions)
+
 
 app.listen(5000, () =>
   console.log(`Server running in ${enviroment} port: ${PORT}`.yellow.bold)
