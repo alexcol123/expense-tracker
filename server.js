@@ -20,7 +20,6 @@ if (enviroment === 'development') app.use(morgan('dev'))
 // Routes
 app.use('/api/v1/transactions', transactions)
 
-
 app.listen(5000, () =>
   console.log(`Server running in ${enviroment} port: ${PORT}`.yellow.bold)
 )
