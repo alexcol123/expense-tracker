@@ -27,7 +27,6 @@ const AddTransaction = () => {
         <div className='form-control'>
           <label htmlFor='text'>Text</label>
           <input
-          
             type='text'
             placeholder='Enter Text'
             value={text}
